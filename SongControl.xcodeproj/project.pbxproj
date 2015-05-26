@@ -20,6 +20,9 @@
 		821B0D9E1B14223E0024C4D3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D9C1B14223E0024C4D3 /* Interface.storyboard */; };
 		821B0DA01B14223E0024C4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D9F1B14223E0024C4D3 /* Images.xcassets */; };
 		821B0DA31B14223E0024C4D3 /* SongControl WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 821B0D881B14223E0024C4D3 /* SongControl WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		821B0DAE1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAB1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav */; };
+		821B0DAF1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAC1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 */; };
+		821B0DB01B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAD1B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		821B0D9B1B14223E0024C4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821B0D9D1B14223E0024C4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		821B0D9F1B14223E0024C4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		821B0DAB1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CLASSICAL SOLITUDE.wav"; sourceTree = "<group>"; };
+		821B0DAC1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Open Source - Sending My Signal.mp3"; sourceTree = "<group>"; };
+		821B0DAD1B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timothy Pinkham - The Knolls of Doldesh.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 		821B0D621B1421F20024C4D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				821B0DAB1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav */,
+				821B0DAC1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 */,
+				821B0DAD1B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */,
 				821B0D631B1421F20024C4D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -331,6 +340,9 @@
 			files = (
 				821B0D6A1B1421F20024C4D3 /* Main.storyboard in Resources */,
 				821B0D6F1B1421F20024C4D3 /* LaunchScreen.xib in Resources */,
+				821B0DAE1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav in Resources */,
+				821B0DAF1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 in Resources */,
+				821B0DB01B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */,
 				821B0D6C1B1421F20024C4D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
