@@ -13,6 +13,13 @@
 		821B0D6C1B1421F20024C4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D6B1B1421F20024C4D3 /* Images.xcassets */; };
 		821B0D6F1B1421F20024C4D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D6D1B1421F20024C4D3 /* LaunchScreen.xib */; };
 		821B0D7B1B1421F20024C4D3 /* SongControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0D7A1B1421F20024C4D3 /* SongControlTests.swift */; };
+		821B0D8E1B14223E0024C4D3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0D8D1B14223E0024C4D3 /* InterfaceController.swift */; };
+		821B0D901B14223E0024C4D3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B0D8F1B14223E0024C4D3 /* NotificationController.swift */; };
+		821B0D921B14223E0024C4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D911B14223E0024C4D3 /* Images.xcassets */; };
+		821B0D961B14223E0024C4D3 /* SongControl WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D951B14223E0024C4D3 /* SongControl WatchKit App.app */; };
+		821B0D9E1B14223E0024C4D3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D9C1B14223E0024C4D3 /* Interface.storyboard */; };
+		821B0DA01B14223E0024C4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821B0D9F1B14223E0024C4D3 /* Images.xcassets */; };
+		821B0DA31B14223E0024C4D3 /* SongControl WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 821B0D881B14223E0024C4D3 /* SongControl WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = 821B0D5E1B1421F20024C4D3;
 			remoteInfo = SongControl;
 		};
+		821B0D971B14223E0024C4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 821B0D571B1421F20024C4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 821B0D941B14223E0024C4D3;
+			remoteInfo = "SongControl WatchKit App";
+		};
+		821B0DA11B14223E0024C4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 821B0D571B1421F20024C4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 821B0D871B14223E0024C4D3;
+			remoteInfo = "SongControl WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		821B0DAA1B14223E0024C4D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				821B0DA31B14223E0024C4D3 /* SongControl WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		821B0D5F1B1421F20024C4D3 /* SongControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,16 @@
 		821B0D741B1421F20024C4D3 /* SongControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		821B0D791B1421F20024C4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821B0D7A1B1421F20024C4D3 /* SongControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongControlTests.swift; sourceTree = "<group>"; };
+		821B0D881B14223E0024C4D3 /* SongControl WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SongControl WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		821B0D8B1B14223E0024C4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821B0D8C1B14223E0024C4D3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		821B0D8D1B14223E0024C4D3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		821B0D8F1B14223E0024C4D3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		821B0D911B14223E0024C4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		821B0D951B14223E0024C4D3 /* SongControl WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SongControl WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		821B0D9B1B14223E0024C4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821B0D9D1B14223E0024C4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		821B0D9F1B14223E0024C4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		821B0D851B14223E0024C4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +113,8 @@
 			children = (
 				821B0D611B1421F20024C4D3 /* SongControl */,
 				821B0D771B1421F20024C4D3 /* SongControlTests */,
+				821B0D891B14223E0024C4D3 /* SongControl WatchKit Extension */,
+				821B0D991B14223E0024C4D3 /* SongControl WatchKit App */,
 				821B0D601B1421F20024C4D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +124,8 @@
 			children = (
 				821B0D5F1B1421F20024C4D3 /* SongControl.app */,
 				821B0D741B1421F20024C4D3 /* SongControlTests.xctest */,
+				821B0D881B14223E0024C4D3 /* SongControl WatchKit Extension.appex */,
+				821B0D951B14223E0024C4D3 /* SongControl WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +168,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		821B0D891B14223E0024C4D3 /* SongControl WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				821B0D8D1B14223E0024C4D3 /* InterfaceController.swift */,
+				821B0D8F1B14223E0024C4D3 /* NotificationController.swift */,
+				821B0D911B14223E0024C4D3 /* Images.xcassets */,
+				821B0D8A1B14223E0024C4D3 /* Supporting Files */,
+			);
+			path = "SongControl WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		821B0D8A1B14223E0024C4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				821B0D8B1B14223E0024C4D3 /* Info.plist */,
+				821B0D8C1B14223E0024C4D3 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		821B0D991B14223E0024C4D3 /* SongControl WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				821B0D9C1B14223E0024C4D3 /* Interface.storyboard */,
+				821B0D9F1B14223E0024C4D3 /* Images.xcassets */,
+				821B0D9A1B14223E0024C4D3 /* Supporting Files */,
+			);
+			path = "SongControl WatchKit App";
+			sourceTree = "<group>";
+		};
+		821B0D9A1B14223E0024C4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				821B0D9B1B14223E0024C4D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				821B0D5B1B1421F20024C4D3 /* Sources */,
 				821B0D5C1B1421F20024C4D3 /* Frameworks */,
 				821B0D5D1B1421F20024C4D3 /* Resources */,
+				821B0DAA1B14223E0024C4D3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				821B0DA21B14223E0024C4D3 /* PBXTargetDependency */,
 			);
 			name = SongControl;
 			productName = SongControl;
@@ -150,6 +246,39 @@
 			productReference = 821B0D741B1421F20024C4D3 /* SongControlTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		821B0D871B14223E0024C4D3 /* SongControl WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 821B0DA71B14223E0024C4D3 /* Build configuration list for PBXNativeTarget "SongControl WatchKit Extension" */;
+			buildPhases = (
+				821B0D841B14223E0024C4D3 /* Sources */,
+				821B0D851B14223E0024C4D3 /* Frameworks */,
+				821B0D861B14223E0024C4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				821B0D981B14223E0024C4D3 /* PBXTargetDependency */,
+			);
+			name = "SongControl WatchKit Extension";
+			productName = "SongControl WatchKit Extension";
+			productReference = 821B0D881B14223E0024C4D3 /* SongControl WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		821B0D941B14223E0024C4D3 /* SongControl WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 821B0DA41B14223E0024C4D3 /* Build configuration list for PBXNativeTarget "SongControl WatchKit App" */;
+			buildPhases = (
+				821B0D931B14223E0024C4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SongControl WatchKit App";
+			productName = "SongControl WatchKit App";
+			productReference = 821B0D951B14223E0024C4D3 /* SongControl WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +294,12 @@
 					821B0D731B1421F20024C4D3 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 821B0D5E1B1421F20024C4D3;
+					};
+					821B0D871B14223E0024C4D3 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					821B0D941B14223E0024C4D3 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +318,8 @@
 			targets = (
 				821B0D5E1B1421F20024C4D3 /* SongControl */,
 				821B0D731B1421F20024C4D3 /* SongControlTests */,
+				821B0D871B14223E0024C4D3 /* SongControl WatchKit Extension */,
+				821B0D941B14223E0024C4D3 /* SongControl WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +339,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		821B0D861B14223E0024C4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821B0D921B14223E0024C4D3 /* Images.xcassets in Resources */,
+				821B0D961B14223E0024C4D3 /* SongControl WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		821B0D931B14223E0024C4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821B0D9E1B14223E0024C4D3 /* Interface.storyboard in Resources */,
+				821B0DA01B14223E0024C4D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		821B0D841B14223E0024C4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821B0D901B14223E0024C4D3 /* NotificationController.swift in Sources */,
+				821B0D8E1B14223E0024C4D3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = 821B0D5E1B1421F20024C4D3 /* SongControl */;
 			targetProxy = 821B0D751B1421F20024C4D3 /* PBXContainerItemProxy */;
+		};
+		821B0D981B14223E0024C4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 821B0D941B14223E0024C4D3 /* SongControl WatchKit App */;
+			targetProxy = 821B0D971B14223E0024C4D3 /* PBXContainerItemProxy */;
+		};
+		821B0DA21B14223E0024C4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 821B0D871B14223E0024C4D3 /* SongControl WatchKit Extension */;
+			targetProxy = 821B0DA11B14223E0024C4D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +424,14 @@
 				821B0D6E1B1421F20024C4D3 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		821B0D9C1B14223E0024C4D3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				821B0D9D1B14223E0024C4D3 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +574,62 @@
 			};
 			name = Release;
 		};
+		821B0DA51B14223E0024C4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SongControl_WatchKit_Extension;
+				INFOPLIST_FILE = "SongControl WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		821B0DA61B14223E0024C4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SongControl_WatchKit_Extension;
+				INFOPLIST_FILE = "SongControl WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		821B0DA81B14223E0024C4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SongControl WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		821B0DA91B14223E0024C4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SongControl WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +655,22 @@
 			buildConfigurations = (
 				821B0D821B1421F20024C4D3 /* Debug */,
 				821B0D831B1421F20024C4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		821B0DA41B14223E0024C4D3 /* Build configuration list for PBXNativeTarget "SongControl WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				821B0DA51B14223E0024C4D3 /* Debug */,
+				821B0DA61B14223E0024C4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		821B0DA71B14223E0024C4D3 /* Build configuration list for PBXNativeTarget "SongControl WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				821B0DA81B14223E0024C4D3 /* Debug */,
+				821B0DA91B14223E0024C4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
