@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
   
   @IBOutlet weak var playButton: UIButton!
   @IBOutlet weak var currentSongLabel: UILabel!
+  
+  var audioSession: AVAudioSession!
+  var audioPlayer: AVAudioPlayer!
   
   override func viewDidLoad() {
     super.viewDidLoad()

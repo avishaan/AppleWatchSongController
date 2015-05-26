@@ -23,6 +23,7 @@
 		821B0DAE1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAB1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav */; };
 		821B0DAF1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAC1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 */; };
 		821B0DB01B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 821B0DAD1B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */; };
+		821B0DB21B1463000024C4D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B0DB11B1463000024C4D3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		821B0DAB1B14620C0024C4D3 /* CLASSICAL SOLITUDE.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CLASSICAL SOLITUDE.wav"; sourceTree = "<group>"; };
 		821B0DAC1B14620C0024C4D3 /* Open Source - Sending My Signal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Open Source - Sending My Signal.mp3"; sourceTree = "<group>"; };
 		821B0DAD1B14620C0024C4D3 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timothy Pinkham - The Knolls of Doldesh.mp3"; sourceTree = "<group>"; };
+		821B0DB11B1463000024C4D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821B0DB21B1463000024C4D3 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +120,7 @@
 		821B0D561B1421F20024C4D3 = {
 			isa = PBXGroup;
 			children = (
+				821B0DB11B1463000024C4D3 /* AVFoundation.framework */,
 				821B0D611B1421F20024C4D3 /* SongControl */,
 				821B0D771B1421F20024C4D3 /* SongControlTests */,
 				821B0D891B14223E0024C4D3 /* SongControl WatchKit Extension */,
