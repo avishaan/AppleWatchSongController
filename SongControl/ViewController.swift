@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     
     configureAudioSession()
+    configureAudioPlayer()
   }
   
   override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
   
   // MARK: - IBActions
   @IBAction func playButtonPressed(sender: UIButton) {
-    
+    playMusic()
   }
   
   @IBAction func previousButtonPressed(sender: UIButton) {
@@ -71,6 +72,11 @@ class ViewController: UIViewController {
     println("song error: \(songError)")
     self.audioPlayer.numberOfLoops = 0
     
+  }
+  
+  func playMusic() {
+    self.audioPlayer.prepareToPlay()
+    self.audioPlayer.play()
   }
   
 }
