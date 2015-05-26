@@ -14,12 +14,14 @@ class ViewController: UIViewController {
   @IBOutlet weak var playButton: UIButton!
   @IBOutlet weak var currentSongLabel: UILabel!
   
-  var audioSession: AVAudioSession!
+  var audioSession: AVAudioSession! //singleton, only one will exist
   var audioPlayer: AVAudioPlayer!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    configureAudioSession()
   }
   
   override func didReceiveMemoryWarning() {
@@ -38,6 +40,25 @@ class ViewController: UIViewController {
   }
   
   @IBAction func nextButtonPressed(sender: UIButton) {
+    
+  }
+  
+  // Mark: - Audio
+  
+  func configureAudioSession() {
+    audioSession = AVAudioSession.sharedInstance()
+    
+    var categoryError: NSError?
+    var activeError: NSError?
+    
+    audioSession.setCategory(AVAudioSessionCategoryPlayback, error: &categoryError)
+    println("error \(categoryError)")
+    
+    var success = self.audioSession.setActive(true, error: &activeError)
+    if !success {
+      println("error making audio session active: \(activeError)")
+    }
+    
     
   }
 }
