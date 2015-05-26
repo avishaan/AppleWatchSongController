@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
   }
   
-  // Mark: - Audio
+  // MARK: - Audio
   
   func configureAudioSession() {
     audioSession = AVAudioSession.sharedInstance()
@@ -59,7 +59,19 @@ class ViewController: UIViewController {
       println("error making audio session active: \(activeError)")
     }
     
+  }
+  
+  func configureAudioPlayer() {
+    
+    var songPath = NSBundle.mainBundle().pathForResource("Open Source - Sending My Signal", ofType: "mp3")
+    var songURL = NSURL.fileURLWithPath(songPath!)
+    
+    var songError: NSError?
+    self.audioPlayer = AVAudioPlayer(contentsOfURL: songURL, error: &songError)
+    println("song error: \(songError)")
+    self.audioPlayer.numberOfLoops = 0
     
   }
+  
 }
 
