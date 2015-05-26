@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  @IBOutlet weak var playButton: UIButton!
+  @IBOutlet weak var currentSongLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +24,17 @@ class ViewController: UIViewController {
   }
   
   
+  // MARK: - IBActions
+  @IBAction func playButtonPressed(sender: UIButton) {
+    
+  }
+  
+  @IBAction func previousButtonPressed(sender: UIButton) {
+    
+  }
+  
+  @IBAction func nextButtonPressed(sender: UIButton) {
+    
+  }
 }
 
