@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     configureAudioSession()
 //    configureAudioPlayer()
+    configureAudioQueuePlayer()
   }
   
   override func didReceiveMemoryWarning() {
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
   func playMusic() {
 //    self.audioPlayer.prepareToPlay()
 //    self.audioPlayer.play()
+    audioQueuePlayer.play()
   }
   
   func createSongs() -> [AnyObject] {
