@@ -43,7 +43,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func nextButtonPressed(sender: UIButton) {
-    
+    audioQueuePlayer.advanceToNextItem()
   }
   
   // MARK: - Audio
