@@ -15,14 +15,15 @@ class ViewController: UIViewController {
   @IBOutlet weak var currentSongLabel: UILabel!
   
   var audioSession: AVAudioSession! //singleton, only one will exist
-  var audioPlayer: AVAudioPlayer!
+//  var audioPlayer: AVAudioPlayer!
+  var audioQueuePlayer: AVQueuePlayer!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
     configureAudioSession()
-    configureAudioPlayer()
+//    configureAudioPlayer()
   }
   
   override func didReceiveMemoryWarning() {
@@ -62,21 +63,32 @@ class ViewController: UIViewController {
     
   }
   
-  func configureAudioPlayer() {
+//  func configureAudioPlayer() {
+//    
+//    var songPath = NSBundle.mainBundle().pathForResource("Open Source - Sending My Signal", ofType: "mp3")
+//    var songURL = NSURL.fileURLWithPath(songPath!)
+//    
+//    var songError: NSError?
+//    self.audioPlayer = AVAudioPlayer(contentsOfURL: songURL, error: &songError)
+//    println("song error: \(songError)")
+//    self.audioPlayer.numberOfLoops = 0
+//    
+//  }
+  
+  // setup audio queue player
+  func configureAudioQueuePlayer() {
+    let songs = createSongs()
+    audioQueuePlayer = AVQueuePlayer(items: songs)
     
-    var songPath = NSBundle.mainBundle().pathForResource("Open Source - Sending My Signal", ofType: "mp3")
-    var songURL = NSURL.fileURLWithPath(songPath!)
-    
-    var songError: NSError?
-    self.audioPlayer = AVAudioPlayer(contentsOfURL: songURL, error: &songError)
-    println("song error: \(songError)")
-    self.audioPlayer.numberOfLoops = 0
+    for var songIndex = 0; songIndex < songs.count; songIndex++ {
+      NSNotificationCenter.defaultCenter().addObserver(self, selector: "songEnded:", name: AVPlayerItemDidPlayToEndTimeNotification, object: songs[songIndex])
+    }
     
   }
   
   func playMusic() {
-    self.audioPlayer.prepareToPlay()
-    self.audioPlayer.play()
+//    self.audioPlayer.prepareToPlay()
+//    self.audioPlayer.play()
   }
   
   func createSongs() -> [AnyObject] {
