@@ -18,6 +18,8 @@ class ViewController: UIViewController {
 //  var audioPlayer: AVAudioPlayer!
   var audioQueuePlayer: AVQueuePlayer!
   
+  var currentSongIndex:Int!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -44,6 +46,8 @@ class ViewController: UIViewController {
   
   @IBAction func nextButtonPressed(sender: UIButton) {
     audioQueuePlayer.advanceToNextItem()
+    // increment the song index so we know which song we are on
+    currentSongIndex = currentSongIndex + 1
   }
   
   // MARK: - Audio
@@ -91,6 +95,8 @@ class ViewController: UIViewController {
 //    self.audioPlayer.prepareToPlay()
 //    self.audioPlayer.play()
     audioQueuePlayer.play()
+    // this means we play first song
+    currentSongIndex = 0
   }
   
   func createSongs() -> [AnyObject] {
@@ -108,6 +114,13 @@ class ViewController: UIViewController {
     
     let songs: [AnyObject] = [firstPlayItem, secondPlayItem, thirdPlayItem]
     return songs
+  }
+  
+  // MARK: - Audio Notification
+  
+  func songEnded(notification: NSNotification) {
+    // increment song to make sure we are keeping track of where we are in the music queue
+    currentSongIndex = currentSongIndex + 1
   }
   
 }
