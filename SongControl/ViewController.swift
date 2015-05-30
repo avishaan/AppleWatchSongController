@@ -41,7 +41,19 @@ class ViewController: UIViewController {
   }
   
   @IBAction func previousButtonPressed(sender: UIButton) {
-    
+    if currentSongIndex > 0 {
+      self.audioQueuePlayer.pause()
+      self.audioQueuePlayer.seekToTime(kCMTimeZero, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+      let temporaryNowPlayIndex = currentSongIndex
+      let temporaryPlayList = self.createSongs()
+      self.audioQueuePlayer.removeAllItems()
+      for var index = temporaryNowPlayIndex - 1; index < temporaryPlayList.count; index++ {
+        self.audioQueuePlayer.insertItem(temporaryPlayList[index] as! AVPlayerItem, afterItem: nil)
+      }
+      self.currentSongIndex = temporaryNowPlayIndex - 1
+      self.audioQueuePlayer.seekToTime(kCMTimeZero, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+      self.audioQueuePlayer.play()
+    }
   }
   
   @IBAction func nextButtonPressed(sender: UIButton) {
