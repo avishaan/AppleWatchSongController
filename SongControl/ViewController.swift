@@ -38,6 +38,7 @@ class ViewController: UIViewController {
   // MARK: - IBActions
   @IBAction func playButtonPressed(sender: UIButton) {
     playMusic()
+    updateUI()
   }
   
   @IBAction func previousButtonPressed(sender: UIButton) {
@@ -53,6 +54,8 @@ class ViewController: UIViewController {
       self.currentSongIndex = temporaryNowPlayIndex - 1
       self.audioQueuePlayer.seekToTime(kCMTimeZero, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
       self.audioQueuePlayer.play()
+      
+      updateUI()
     }
   }
   
@@ -60,6 +63,8 @@ class ViewController: UIViewController {
     audioQueuePlayer.advanceToNextItem()
     // increment the song index so we know which song we are on
     currentSongIndex = currentSongIndex + 1
+    
+    updateUI()
   }
   
   // MARK: - Audio
@@ -140,6 +145,8 @@ class ViewController: UIViewController {
   func songEnded(notification: NSNotification) {
     // increment song to make sure we are keeping track of where we are in the music queue
     currentSongIndex = currentSongIndex + 1
+    
+    updateUI()
   }
   
   // MARK: - UIUpdate Helpers
