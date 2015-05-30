@@ -49,8 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     NSNotificationCenter.defaultCenter().postNotificationName("WatchKitDidMakeRequest", object: watchKitInformation)
     
-    reply(["Working": "Now"])
-    
   }
 
 

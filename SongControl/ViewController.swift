@@ -197,6 +197,10 @@ class ViewController: UIViewController {
       default:
         println("something went wrong in switch statement")
       }
+      
+      let currentSongDictionary = ["CurrentSong": currentSongName()]
+      watchKitInfo.replyBlock(currentSongDictionary)
+      
       updateUI()
     }
   }
