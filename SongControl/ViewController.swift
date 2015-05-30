@@ -187,10 +187,18 @@ class ViewController: UIViewController {
     if watchKitInfo.playerRequest != nil {
       let requestedAction: String = watchKitInfo.playerRequest!
       
-      playMusic()
+      switch requestedAction {
+      case "Play":
+        playMusic()
+      case "Next":
+        nextButtonPressed(UIButton())
+      case "Previous":
+        previousButtonPressed(UIButton())
+      default:
+        println("something went wrong in switch statement")
+      }
+      updateUI()
     }
-    
   }
-  
 }
 
