@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     configureAudioSession()
 //    configureAudioPlayer()
     configureAudioQueuePlayer()
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleRequest:"), name: "WatchKitDidMakeRequest", object: nil)
+    
   }
   
   override func didReceiveMemoryWarning() {
