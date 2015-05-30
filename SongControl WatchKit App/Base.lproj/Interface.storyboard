@@ -17,17 +17,29 @@
                             <items>
                                 <button width="50" alignment="left" title="&lt;" id="m3X-pc-eoA">
                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="previousSongButtonPressed" destination="AgC-eL-Hgc" id="p1H-sB-FQb"/>
+                                    </connections>
                                 </button>
                                 <button width="50" alignment="right" title="&gt;" id="Etw-qs-Xnk">
                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextSongButtonPressed" destination="AgC-eL-Hgc" id="xN0-Gs-tu4"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Play" id="PHe-oY-D4q">
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="playSongButtonPressed" destination="AgC-eL-Hgc" id="fD7-0u-one"/>
+                            </connections>
                         </button>
                     </items>
                     <color key="backgroundColor" red="1" green="0.56246700319999998" blue="0.22236551960000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="songTitleLabel" destination="n47-jx-L3T" id="SqU-kU-jk0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
