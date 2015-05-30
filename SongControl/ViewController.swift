@@ -161,5 +161,13 @@ class ViewController: UIViewController {
     return currentSong
   }
   
+  func updateUI() {self.currentSongLabel.text = currentSongName()
+    if audioQueuePlayer.rate > 0 && audioQueuePlayer.error == nil {
+      playButton.setTitle("Pause", forState: UIControlState.Normal)
+    } else {
+      playButton.setTitle("Play", forState: UIControlState.Normal)
+    }
+  }
+  
 }
 
